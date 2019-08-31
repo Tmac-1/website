@@ -8,6 +8,7 @@
 .header{
     display: flex;
     justify-content:space-between;
+    margin: 35px 31px;
 }
 
 .swiper-slide img{
