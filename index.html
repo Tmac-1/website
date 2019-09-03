@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="./css/resize.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1379887_qtmt02gd0bc.css">
+    <!-- <script src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script> -->
+    <style>
+      @font-face {font-family: 'PingFangEL1a9cef6c2117e93';src: url('http://cdn.repository.webfont.com/webfonts/vipjs/97939/47100/5d2cff86344aa8126a224ae6.gif');
+      src: url('http://cdn.repository.webfont.com/webfonts/vipjs/97939/47100/5d2cff86344aa8126a224ae6.gif?#iefix') format('embedded-opentype'),
+      url('http://cdn.repository.webfont.com/webfonts/vipjs/97939/47100/5d2cff86344aa8126a224ae6.png') format('woff2'),
+      url('http://cdn.repository.webfont.com/webfonts/vipjs/97939/47100/5d2cff86344aa8126a224ae6.bmp') format('woff'),
+      url('http://cdn.repository.webfont.com/webfonts/vipjs/97939/47100/5d2cff86344aa8126a224ae6.jpg') format('truetype');font-weight: normal;font-style: normal;}
+    </style>
     <style>
       @media screen and (max-width: 750px) {
         .swiper-slide img{
@@ -22,6 +30,14 @@
          .swiper-button-next{
              display: none;
          }
+         .nav li{
+             height: 60px;
+             line-height: 60px;
+             font-size: 0.3rem;
+         }
+         .close img{
+            width: 25px;
+        }
       }
     </style>  
 </head>
@@ -29,7 +45,19 @@
     <div class="header_wrap">
         <div class="header">
             <p> <a href="#"> <img src="http://cdn1.hzvis.com/static/logo.png"/>  </a>  </p>
-            <p> <i class="iconfont icon-caidananniu1" style="font-size: 24px;cursor:pointer"></i> </p>
+            <p id="menu"> <i class="iconfont icon-caidananniu1" style="font-size: 24px;cursor:pointer"></i> </p>
+        </div>
+        <div class="nav_warp">
+            <ul class="nav">
+                <li> <a href="#"> 首页 </a> </li>
+                <li> <a href="#"> 案例 </a> </li>
+                <li> <a href="#"> 关于我们 </a> </li>
+                <li> <a href="#"> 原创观点 </a> </li>
+                <li> <a href="#"> 联系 </a> </li>
+            </ul>
+            <p class="close"> 
+              <img src="./img/close.png"/>    
+            </p>
         </div>
     </div>
     <div class="swiper-container">
@@ -47,17 +75,19 @@
         <div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
         <div class="swiper-button-prev">
             <div class="mySwiperBtn">
-                <i class="iconfont icon-zuoyoujiantou2"  style="font-size: 44px;position: relative;top:4px;left: 3px;"></i>
+                <i class="iconfont icon-zuoyoujiantou2"  style="font-size: 44px;position: relative;top:8px;left: 3px;"></i>
             </div> 
         </div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
         <div class="swiper-button-next">
             <div class="mySwiperBtn"> 
-                <i class="iconfont icon-zuoyoujiantou1"  style="font-size: 44px;position: relative;top:4px;left: 9px;"></i>
+                <i class="iconfont icon-zuoyoujiantou1"  style="font-size: 44px;position: relative;top:8px;left: 9px;"></i>
             </div> 
         </div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+    <script src="./js/rem.js"></script>
     <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/index.js"></script>
     <script>
     var mySwiper = new Swiper('.swiper-container', {
              autoplay: true,//可选选项，自动滑动

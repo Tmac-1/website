@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-display: "PingFang SC", "HanHei SC", "Helvetica Neue", Microsoft Yahei, "Helvetica", "STHeitiSC-Light", "Arial", sans-serif;
 }
 
 /*清除浮动*/
@@ -15,3 +16,4 @@
 .clearfix{
   *zoom: 1;
 }
+
