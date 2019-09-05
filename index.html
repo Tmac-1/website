@@ -49,13 +49,17 @@
         .othermoto{
             font-size: 12px;
         }
+        .layui-nav .layui-nav-item{
+            height: 40px;
+            line-height: 40px;
+       }
       }
     </style>  
 </head>
 <body>
     <div class="header_wrap">
         <div class="header">
-            <p> <a href="#"> <img src="http://cdn1.hzvis.com/static/logo.png"/>  </a>  </p>
+            <p> <a href="#"> <img src="./img/logo.png" width="100"/>  </a>  </p>
             <p id="menu"> <i class="iconfont icon-caidananniu1" style="font-size: 24px;cursor:pointer"></i> </p>
         </div>
         <div class="nav_warp">
@@ -102,9 +106,84 @@
             <p> 构建线上到线下多维一体化平台，以杰出的创意和精良的执行力为企业构建全新的品牌视觉形象。</p>
         </div>
     </div>
+    <div class="content-nav">
+        <ul class="layui-nav" lay-filter="">
+            <li class="layui-nav-item"><a href="">ALL</a></li>
+            <li class="layui-nav-item layui-this"><a href="">logo/VI设计</a></li>
+            <li class="layui-nav-item"><a href="">画册设计</a></li>
+            <li class="layui-nav-item"><a href="">包装设计</a></li>
+            <li class="layui-nav-item"><a href="">文化墙设计</a></li>
+            <li class="layui-nav-item"><a href="">线上与宣传</a></li>
+        </ul>
+    </div>
+    <div class="imgListWrap">
+       <ul class="ul01 clearfix">
+           <li class="imgItem">
+               <a href="#">
+                    <img src="http://cdn1.hzvis.com/upfile/image/2019/01/1546411562_4867.jpg"/>
+                    <div class="shadow">
+                        <p class="itemTitle">木木屋集团</p>
+                        <p class="itemInfo">
+                             -
+                            <br/>
+                            <span class="sy1">香飘飘线上礼盒包装设计</span> 
+                            <br>
+                            品牌包装设计、礼盒设计  
+                        </p>
+                    </div>
+               </a>
+           </li>
+           <li class="imgItem">
+                <a href="#">
+                    <img src="http://cdn1.hzvis.com/upfile/image/2019/07/1562729435_6812.jpg"/>
+                    <div class="shadow">
+                        <p class="itemTitle">木木屋集团</p>
+                        <p class="itemInfo">
+                                -
+                            <br/>
+                            <span class="sy1">香飘飘线上礼盒包装设计</span> 
+                            <br>
+                            品牌包装设计、礼盒设计  
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="imgItem">
+                <a href="#">
+                        <img src="http://cdn1.hzvis.com/upfile/image/2019/04/1554087071_8215.jpg"/>
+                        <div class="shadow">
+                            <p class="itemTitle">木木屋集团</p>
+                            <p class="itemInfo">
+                                    -
+                                <br/>
+                                <span class="sy1">香飘飘线上礼盒包装设计</span> 
+                                <br>
+                                品牌包装设计、礼盒设计  
+                            </p>
+                        </div>
+                </a>
+            </li>
+            <li class="imgItem">
+                    <a href="#">
+                            <img src="http://cdn1.hzvis.com/upfile/image/2019/01/1546411562_4867.jpg"/>
+                            <div class="shadow">
+                                <p class="itemTitle">木木屋集团</p>
+                                <p class="itemInfo">
+                                        -
+                                    <br/>
+                                    <span class="sy1">香飘飘线上礼盒包装设计</span> 
+                                    <br>
+                                    品牌包装设计、礼盒设计  
+                                </p>
+                            </div>
+                    </a>
+            </li>
+       </ul>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
     <script src="./js/rem.js"></script>
     <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/layui.all.js"></script>
     <script src="./js/index.js"></script>
     <script>
     var mySwiper = new Swiper('.swiper-container', {
@@ -129,6 +208,9 @@
      if(mySwiper.slides.length<=1){
         mySwiper.destroy();
      }
+     layui.use('element', function(){
+        var element = layui.element;
+    });
     </script>
 </body>
 </html>
