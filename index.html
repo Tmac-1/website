@@ -53,13 +53,19 @@
             height: 40px;
             line-height: 40px;
        }
+       .imgItem{
+           width: 100%;
+       }
+       .sponsor_wrap li{
+           width: 48.5% !important;
+       }
       }
     </style>  
 </head>
 <body>
     <div class="header_wrap">
         <div class="header">
-            <p> <a href="#"> <img src="./img/logo.png" width="100"/>  </a>  </p>
+            <p> <a href="#"> <img src="./img/logo.png" />  </a>  </p>
             <p id="menu"> <i class="iconfont icon-caidananniu1" style="font-size: 24px;cursor:pointer"></i> </p>
         </div>
         <div class="nav_warp">
@@ -107,18 +113,18 @@
         </div>
     </div>
     <div class="content-nav">
-        <ul class="layui-nav" lay-filter="">
-            <li class="layui-nav-item"><a href="">ALL</a></li>
-            <li class="layui-nav-item layui-this"><a href="">logo/VI设计</a></li>
-            <li class="layui-nav-item"><a href="">画册设计</a></li>
-            <li class="layui-nav-item"><a href="">包装设计</a></li>
-            <li class="layui-nav-item"><a href="">文化墙设计</a></li>
-            <li class="layui-nav-item"><a href="">线上与宣传</a></li>
+        <ul class="layui-nav">
+            <li class="layui-nav-item layui-this"><a data-filter="*">ALL</a></li>
+            <li class="layui-nav-item"><a data-filter=".fl01">logo/VI设计</a></li>
+            <li class="layui-nav-item"><a data-filter=".fl02">画册设计</a></li>
+            <li class="layui-nav-item"><a data-filter=".fl03">包装设计</a></li>
+            <li class="layui-nav-item"><a data-filter=".fl04">文化墙设计</a></li>
+            <li class="layui-nav-item"><a data-filter=".fl05">线上与宣传</a></li>
         </ul>
     </div>
     <div class="imgListWrap">
        <ul class="ul01 clearfix">
-           <li class="imgItem">
+           <li class="imgItem fl01">
                <a href="#">
                     <img src="http://cdn1.hzvis.com/upfile/image/2019/01/1546411562_4867.jpg"/>
                     <div class="shadow">
@@ -133,7 +139,7 @@
                     </div>
                </a>
            </li>
-           <li class="imgItem">
+           <li class="imgItem fl01">
                 <a href="#">
                     <img src="http://cdn1.hzvis.com/upfile/image/2019/07/1562729435_6812.jpg"/>
                     <div class="shadow">
@@ -148,7 +154,7 @@
                     </div>
                 </a>
             </li>
-            <li class="imgItem">
+            <li class="imgItem fl03">
                 <a href="#">
                         <img src="http://cdn1.hzvis.com/upfile/image/2019/04/1554087071_8215.jpg"/>
                         <div class="shadow">
@@ -163,7 +169,67 @@
                         </div>
                 </a>
             </li>
-            <li class="imgItem">
+            <li class="imgItem fl04">
+                    <a href="#">
+                            <img src="http://cdn1.hzvis.com/upfile/image/2019/01/1546411562_4867.jpg"/>
+                            <div class="shadow">
+                                <p class="itemTitle">木木屋集团</p>
+                                <p class="itemInfo">
+                                        -
+                                    <br/>
+                                    <span class="sy1">香飘飘线上礼盒包装设计</span> 
+                                    <br>
+                                    品牌包装设计、礼盒设计  
+                                </p>
+                            </div>
+                    </a>
+            </li>
+            <li class="imgItem fl05">
+                <a href="#">
+                     <img src="http://cdn1.hzvis.com/upfile/image/2019/01/1546411562_4867.jpg"/>
+                     <div class="shadow">
+                         <p class="itemTitle">木木屋集团</p>
+                         <p class="itemInfo">
+                              -
+                             <br/>
+                             <span class="sy1">香飘飘线上礼盒包装设计</span> 
+                             <br>
+                             品牌包装设计、礼盒设计  
+                         </p>
+                     </div>
+                </a>
+            </li>
+            <li class="imgItem fl02">
+                 <a href="#">
+                     <img src="http://cdn1.hzvis.com/upfile/image/2019/07/1562729435_6812.jpg"/>
+                     <div class="shadow">
+                         <p class="itemTitle">木木屋集团</p>
+                         <p class="itemInfo">
+                                 -
+                             <br/>
+                             <span class="sy1">香飘飘线上礼盒包装设计</span> 
+                             <br>
+                             品牌包装设计、礼盒设计  
+                         </p>
+                     </div>
+                 </a>
+             </li>
+             <li class="imgItem fl03">
+                <a href="#">
+                        <img src="http://cdn1.hzvis.com/upfile/image/2019/04/1554087071_8215.jpg"/>
+                        <div class="shadow">
+                            <p class="itemTitle">木木屋集团</p>
+                            <p class="itemInfo">
+                                    -
+                                <br/>
+                                <span class="sy1">香飘飘线上礼盒包装设计</span> 
+                                <br>
+                                品牌包装设计、礼盒设计  
+                            </p>
+                        </div>
+                </a>
+            </li>
+            <li class="imgItem fl02">
                     <a href="#">
                             <img src="http://cdn1.hzvis.com/upfile/image/2019/01/1546411562_4867.jpg"/>
                             <div class="shadow">
@@ -179,6 +245,27 @@
                     </a>
             </li>
        </ul>
+    </div>
+    <div class="lookMore_wrap">
+        <p class="lookMore_p1">更多案例</p> 
+        <p class="lookMore_p2"> 让品牌更有价值！ </p>
+        <p class="lookMore_p3"> 帮助合作伙伴的品牌在复杂多变的市场中稳健前行 </p>
+    </div>
+    <div style="margin:0 auto;display:flex;justify-content: center;position: relative;">
+        <ul class="sponsor_wrap clearfix">
+            <li><img src="./img/logo.png"/></li>
+            <li><img src="http://cdn1.hzvis.com/static/logo.png"/></li>
+            <li><img src="./img/logo.png"/></li>
+            <li><img src="./img/logo.png"/></li>
+            <li><img src="./img/logo.png"/></li>
+            <li><img src="./img/logo.png"/></li>
+            <li><img src="./img/logo.png"/></li>
+            <li><img src="./img/logo.png"/></li>
+            <li><img src="./img/logo.png"/></li>
+        </ul>
+    </div>
+    <div>
+        
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
     <script src="./js/rem.js"></script>
