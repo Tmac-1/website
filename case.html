@@ -18,12 +18,18 @@
         url('http://cdn.repository.webfont.com/webfonts/vipjs/97939/47100/5d2cff86344aa8126a224ae6.jpg') format('truetype');font-weight: normal;font-style: normal;}
     </style>
 </head>
+<div class="out" style="width: 240px;margin-bottom: 20px;display: none;"> 
+  <p style="font-size: 12px;color: #000;margin:15px 15px"> 分享到微信朋友圈 </p>   
+  <div id="qrcode" style="text-align: center;padding-left: 50px"></div> 
+  <p style="font-size: 12px;color: #666;margin:15px 15px 0 15px">打开微信，点击底部的“发现”</p>
+  <p style="font-size: 12px;color: #666;margin:5px 5px 5px 15px">使用“扫一扫”即可将网页分享至朋友圈</p>
+</div>
 <body>
     <div class="share_warp">
        <p id="closePage"><i class="layui-icon layui-icon-close"></i></p>
        <p> <a href="#"> <i class="layui-icon layui-icon-right"></i> </a> </p>
        <p> <a> <i class="layui-icon layui-icon-left"></i> </a>  </p>
-       <p> <i class="layui-icon layui-icon-share"></i> </p>
+       <p id="share"> <i class="layui-icon layui-icon-share"></i> </p>
     </div>
     <div class="header_wrap">
         <div class="header">
@@ -102,6 +108,8 @@
     </div>
     <script src="./js/rem.js"></script>
     <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/qrcode.min.js"></script>
+    <script src="./js/layui.all.js"></script>
     <script src="./js/case.js"></script>
 </body>
 </html>
