@@ -1,38 +1,51 @@
-.contact_wrap{
-    width: 50%;
+.content_wrap{
     margin:100px auto 100px;
+    width: 70%;
 }
 .left{
     float: left;
-    color: #595757;
-    font-size: 30px;
+    columns: #595757;
+    margin-left: 150px;
+    font-size: 27px;
 }
 .right{
     float: right;
     width: 60%;
     color: #5f6061;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2;
 }
-.cooperation{
+.title{
+    color: #db0445;
+}
+.service01{
     margin-top: 50px;
 }
-.site_and_phone{
-    margin-top: 50px;
-}
-.recrit{
+.environment{
     margin-top: 50px;
 }
 
 @media screen and (max-width:750px){
-    .contact_wrap{
+    .content_wrap{
         width: 94%;
     }
     .left{
         float: none;
+        margin-left: 0px;
         margin-bottom: 15px;
     }
     .right{
+        float: none;
         width: 100%;
     }
+    .service01{
+        margin-top: 30px;
+    }
+    .environment{
+        margin-top: 30px;
+    }
 }
+
+
+
+
