@@ -21,6 +21,9 @@
 .content p{
     line-height: 2;
 }
+.content img{
+    width: 100%;
+}
 .title{
     color: #0f0b09;
     font-size: 24px;
@@ -31,6 +34,9 @@
 
 
 @media screen and (max-width:750px){
+    .share_warp{
+            display: none;
+    }
     .article{
         width: 94%;
         margin:90px auto 50px;
